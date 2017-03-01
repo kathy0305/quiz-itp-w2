@@ -29,6 +29,12 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
+    a_dict= {} #initialize dict
+    for k,v in customers.items(): # receives a dictionary containing states (as keys)
+        ##and customers for those states (as a list of dictionaries)
+        a_list=[]  ## i need to start an empty list with the v
+        a_dict[k]=len(a_list)
+    return a_dict
     pass
 
 

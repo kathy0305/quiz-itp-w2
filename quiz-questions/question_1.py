@@ -20,4 +20,6 @@ def question_1():
     What will be the final value of the variable c?
     """
     # Return the CORRECT value of `c`
+    # c= 7+11+5+7=30
+    return 30
     pass

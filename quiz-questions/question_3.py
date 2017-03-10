@@ -42,18 +42,21 @@ def eldest_customer_per_state(customers):
     ##This function receives a dictionary containing states (as keys) and
     ##customers for those states (as a list of dictionaries)
     a_dict={}
-    for k in customers:
-        if cutomers[k] == None :
-            a_dict[k]= None
-        else: 
-            for i in customers[k]:
-                if 
+    for key in customers:
+        old=0
+        for i in customers[key]:
+            if i['age'] > old:
+                old = i['age']
+                oldname= i['name']
+        a_dict[key]= {'name':oldname, 'age':old}
+    retun a_dict
+    
         
                 
             
             
                 
-    pass
+   
 
 
 class EldestCustomerTestCase(unittest.TestCase):

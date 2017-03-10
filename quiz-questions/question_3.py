@@ -42,9 +42,13 @@ def eldest_customer_per_state(customers):
     ##This function receives a dictionary containing states (as keys) and
     ##customers for those states (as a list of dictionaries)
     a_dict={}
-    def eldest_customer_per_state(customers):
-        for k,v in customers.items(): #should return a final dictionary containing the eldest customer per each state
-            if k in a_dict :
+    for k in customers:
+        if cutomers[k] == None :
+            a_dict[k]= None
+        else: 
+            for i in customers[k]:
+                if 
+        
                 
             
             

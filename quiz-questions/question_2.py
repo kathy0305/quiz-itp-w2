@@ -30,12 +30,14 @@ def number_of_customers_per_state(customers):
     """
     # Write your code here
     a_dict= {} #initialize dict
-    for k,v in customers.items(): # receives a dictionary containing states (as keys)
-        ##and customers for those states (as a list of dictionaries)
-        a_list=[]  ## i need to start an empty list with the v
-        a_dict[k]=len(a_list)
+    for k in customers: # receives a dictionary containing states (as keys)
+        if customers[k] != None :  # if its not empty
+            a_dict[k] = len(customers[k])  ## give me the lenght or number of customers in state and store in a_dict 
+        else:
+            a_dict[k] = 0
+       
     return a_dict
-    pass
+   
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
